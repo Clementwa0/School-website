@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Coding School</title>
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="Index.html"><img src="assets/logo.png"></a>
+      <div class="nav_links" id="navLinks">
+        <i class="fa fa-close" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Courses</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text_box">
+      <h1>Empowering Future Developers</h1>
+      <p>Join our coding school and master the latest technologies in software development, AI, cybersecurity, and more.</p>
+      <a href="" class="hero-btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Courses -->
+  <section class="course">
+    <h1>Our Coding & Tech Courses</h1>
+    <p>Gain in-demand skills through our hands-on coding programs, guided by industry experts.</p>
+    <hr/>
+    <div class="course-container">
+      <div class="course-col course-ds-ai">
+        <h3>Data Science & AI</h3>
+        <p>Learn Python, TensorFlow, and AI technologies to analyze data and build machine learning models.</p>
+        <button class="hero-btn"><a href="#">Learn More</a></button>
+      </div>
+      <div class="course-col course-mobile">
+        <h3>Full-Stack Web Development</h3>
+        <p>Master HTML, CSS, JavaScript, React, and backend technologies to build scalable web apps.</p>
+        <button class="hero-btn"><a href="#">Learn More</a></button>
+      </div>
+      <div class="course-col course-cloud">
+        <h3>Cybersecurity & Ethical Hacking</h3>
+        <p>Protect networks, conduct penetration testing, and become an ethical hacker.</p>
+        <button class="hero-btn"><a href="#">Learn More</a></button>
+      </div>
+      <div class="course-col course-blockchain">
+        <h3>Blockchain & Web3 Development</h3>
+        <p>Develop decentralized applications and smart contracts using Solidity.</p>
+        <button class="hero-btn"><a href="#">Learn More</a></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus -->
+  <section class="campus">
+    <h1>Learn from Anywhere</h1>
+    <p>Our online coding bootcamps and global campuses ensure accessible learning for all.</p>
+    <div class="row">
+      <div class="campus-col">
+        <img src="assets/london.png" alt="">
+        <div class="layer">
+          <h3>London</h3>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="assets/london.png" alt="">
+        <div class="layer">
+          <h3>New York</h3>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="assets/london.png" alt="">
+        <div class="layer">
+          <h3>Online</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities -->
+  <section class="facilities">
+    <h1>Our Learning Facilities</h1>
+    <p>We offer cutting-edge technology and an engaging environment to support your coding journey.</p>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="/assets/library.png" alt="Modern Library">
+        <h3>Resource Library</h3>
+        <p>Access thousands of coding books, online courses, and learning materials.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="/assets/library.png" alt="Tech Lab">
+        <h3>State-of-the-Art Coding Labs</h3>
+        <p>Practice real-world coding with the latest software and development tools.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="/assets/cafeteria.png" alt="Cafeteria">
+        <h3>Student Community Hub</h3>
+        <p>Connect with fellow coders, collaborate on projects, and participate in hackathons.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h1>Student Success Stories</h1>
+    <p>See what our graduates say about their coding journey with us.</p>
+    <div class="row">
+      <div class="testimonials-col">
+        <img src="/assets/user1.jpg" alt="User 1">
+        <div>
+          <p>"This coding school gave me the skills and confidence to land my dream job as a software developer."</p>
+          <h3>John Doe</h3>
+        </div>
+      </div>
+      <div class="testimonials-col">
+        <img src="/assets/user2.jpg" alt="User 2">
+        <div>
+          <p>"The hands-on projects and supportive mentors made all the difference in my learning experience!"</p>
+          <h3>Jane Smith</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var navLinks = document.getElementById('navLinks');
+    function showMenu() {
+      navLinks.style.right = '0';
+    }
+    function hideMenu() {
+      navLinks.style.right = '-250px';
+    }
+  </script>
+</body>
+
+</html>
